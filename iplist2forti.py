@@ -1,15 +1,10 @@
 #! /usr/bin/python
 
-"""
-WireShark stats to FortiGate
-"""
-
 import argparse
 
 
 def parse_args() -> argparse.Namespace:
-    p = argparse.ArgumentParser(description='Create (a lot of) address '
-                                            'objects and groups from list for use in FortiOS.')
+    p = argparse.ArgumentParser(description='WireShark stats to FortiGate.')
 
     p.set_defaults(
         delimiter='\t',
