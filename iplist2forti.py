@@ -11,7 +11,7 @@ def parse_args() -> argparse.Namespace:
         skip_repeats=True
     )
 
-    addarg = p.add_argument  # an alias
+    addarg = p.add_argument
 
     addarg('-i', '--in-file', dest='in_file', required=True,
            help='input file')
